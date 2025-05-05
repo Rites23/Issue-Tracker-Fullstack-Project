@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import AssigneeSelect from "../[id]/AssigneeSelect";
 
 import {
   Card,
@@ -10,6 +11,7 @@ import {
 import { format } from "date-fns";
 import IssueEditButton from "./IssueEditButton";
 import IssueDeleteButton from "./IssueDeleteButton";
+
 
 interface Issue {
   id: string;
@@ -41,6 +43,7 @@ export default function IssueDetail({ issue }: { issue: Issue }) {
           Created At: {format(new Date(issue.createdAt), "MMMM d, yyyy HH:mm")}
         </p>
         <div className="flex gap-4">
+          <AssigneeSelect />
           <IssueEditButton issueId={issue.id} />
           <IssueDeleteButton issueId={issue.id} />
         </div>
