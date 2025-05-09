@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import Link from "next/link";
 import React from "react";
 
@@ -39,7 +41,7 @@ const IssuePage = async ({
     ? (statusParam as Status)
     : undefined;
 
-  const pageSize = 4;
+  const pageSize = 10;
 
   const orderBy: any = {};
   if (sortBy === "title" || sortBy === "status" || sortBy === "createdAt") {

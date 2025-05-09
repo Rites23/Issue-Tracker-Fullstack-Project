@@ -7,8 +7,8 @@ import SignOut from "../auth/sign-out";
 const Navbar = () => {
   const currentPath = usePathname();
   const links = [
-    { id: 1, href: "/", label: "Home" },
-    { id: 2, href: "/dashboard", label: "Dashboard" },
+    { id: 1, href: "/", label: "Dashboard" },
+
     { id: 3, href: "/issues/list", label: "Issues" },
   ];
 
